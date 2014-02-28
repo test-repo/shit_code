@@ -1,0 +1,8 @@
+class ApplicationController < ActionController::Base
+  rescue_from DeviseLdapAuthenticatable::LdapException do |exception|
+    render :text => exception, :status => 500
+  end
+
+  helper_method :new_group
+  protect_from_forgery
+end

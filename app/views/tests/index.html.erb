@@ -1,0 +1,9 @@
+<h1>Listing сhecks</h1>
+
+<% @tests.each do |test| %>
+<br>
+  <%= link_to test.check, test %>
+</br>
+
+<% end %>
+<%= link_to 'New check', new_test_path %>
