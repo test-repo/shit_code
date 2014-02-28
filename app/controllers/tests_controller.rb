@@ -70,24 +70,24 @@ class TestsController < ApplicationController
     end
   end
 
-  def new_group
-    @group_name = Group.new
+  #def new_group
+  #  @group_name = Group.new
+  #
+  #  respond_to do |format|
+  #    format.html # new_group.html.erb
+  #    format.json { render json: @group }
+  #  end
+  #end
 
-    respond_to do |format|
-      format.html # new_group.html.erb
-      format.json { render json: @group }
-    end
-  end
-
-  def index_group
-    @group_name = Group.all
-  end
+  #def index_group
+  #  @group_name = Group.all
+  #end
 
   def create_group
     @group_name = params[:group]
-  end
+  #end
 
-  def save_group(group_name)
+  #def save_group(group_name)
     @get_group = Group.create(:group_name => :group)
     @get_group.save
       if @get_group.save
