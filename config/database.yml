@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: transition_dev
+  pool: 5
+  username: trans
+  password: qwerty
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: transition_test
+  pool: 5
+  username: trans
+  password: qwerty
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: transition_prod
+  pool: 5
+  username: trans
+  password: qwerty
