@@ -1,6 +1,6 @@
 Transition::Application.routes.draw do
-
-	resources :tests do
+  
+  resources :tests do
     post '/create_group' , to: 'test#create_group'
   end
   devise_for :users
